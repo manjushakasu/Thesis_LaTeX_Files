@@ -1,0 +1,28 @@
+\select@language {finnish}
+\select@language {finnish}
+\select@language {finnish}
+\select@language {english}
+\select@language {finnish}
+\select@language {english}
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {2.1}{\ignorespaces 2D mesh NoC topology}}{5}
+\contentsline {figure}{\numberline {2.2}{\ignorespaces point-to-point and mesh}}{6}
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Ring and Torus}}{7}
+\contentsline {figure}{\numberline {2.4}{\ignorespaces Folded Torus and Octagon}}{8}
+\contentsline {figure}{\numberline {2.5}{\ignorespaces Fat Tree and Butterfly}}{9}
+\contentsline {figure}{\numberline {2.6}{\ignorespaces Optimized Mesh and Hybrid}}{10}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Agents interaction with environment.\relax }}{18}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Agents and environment.\relax }}{21}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Simplified UML diagram of basic classes}}{28}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {5.1}{\ignorespaces 2D Mesh Network with XY-routing\relax }}{36}
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Scheduling 2D NoC\relax }}{37}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {6.1}{\ignorespaces Levels of hierarchy\relax }}{40}
+\contentsline {figure}{\numberline {6.2}{\ignorespaces Directions with respect to conditional statements\relax }}{47}
+\contentsline {figure}{\numberline {6.3}{\ignorespaces UML class diagram for the 3D NoC agent based model\relax }}{48}
+\contentsline {figure}{\numberline {6.4}{\ignorespaces Scheduling 3D NoC\relax }}{50}
+\addvspace {10\p@ }

@@ -1,0 +1,742 @@
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=latex 2012.7.28)  27 MAR 2014 15:02
+entering extended mode
+ %&-line parsing enabled.
+**main.tex
+(./main.tex
+LaTeX2e <2009/09/24>
+Babel <v3.8l> and hyphenation patterns for english, usenglishmax, dumylang, noh
+yphenation, farsi, arabic, croatian, bulgarian, ukrainian, russian, czech, slov
+ak, danish, dutch, finnish, french, basque, ngerman, german, german-x-2009-06-1
+9, ngerman-x-2009-06-19, ibycus, monogreek, greek, ancientgreek, hungarian, san
+skrit, italian, latin, latvian, lithuanian, mongolian2a, mongolian, bokmal, nyn
+orsk, romanian, irish, coptic, serbian, turkish, welsh, esperanto, uppersorbian
+, estonian, indonesian, interlingua, icelandic, kurmanji, slovenian, polish, po
+rtuguese, spanish, galician, catalan, swedish, ukenglish, pinyin, loaded.
+(/usr/share/texmf-texlive/tex/latex/base/report.cls
+Document Class: report 2007/10/19 v1.4h Standard LaTeX document class
+(/usr/share/texmf-texlive/tex/latex/base/size12.clo
+File: size12.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
+)
+\c@part=\count79
+\c@chapter=\count80
+\c@section=\count81
+\c@subsection=\count82
+\c@subsubsection=\count83
+\c@paragraph=\count84
+\c@subparagraph=\count85
+\c@figure=\count86
+\c@table=\count87
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+)
+(/usr/share/texmf-texlive/tex/latex/geometry/geometry.sty
+Package: geometry 2008/12/21 v4.2 Page Geometry
+
+(/usr/share/texmf-texlive/tex/latex/graphics/keyval.sty
+Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
+\KV@toks@=\toks14
+)
+(/usr/share/texmf-texlive/tex/generic/oberdiek/ifpdf.sty
+Package: ifpdf 2009/04/10 v2.0 Provides the ifpdf switch (HO)
+Package ifpdf Info: pdfTeX in pdf mode not detected.
+)
+(/usr/share/texmf-texlive/tex/generic/oberdiek/ifvtex.sty
+Package: ifvtex 2008/11/04 v1.4 Switches for detecting VTeX and its modes (HO)
+Package ifvtex Info: VTeX not detected.
+)
+\Gm@cnth=\count88
+\Gm@cntv=\count89
+\c@Gm@tempcnt=\count90
+\Gm@bindingoffset=\dimen103
+\Gm@wd@mp=\dimen104
+\Gm@odd@mp=\dimen105
+\Gm@even@mp=\dimen106
+\Gm@dimlist=\toks15
+
+(/usr/share/texmf-texlive/tex/xelatex/xetexconfig/geometry.cfg))
+(/usr/share/texmf-texlive/tex/latex/amsfonts/amssymb.sty
+Package: amssymb 2009/06/22 v3.00
+
+(/usr/share/texmf-texlive/tex/latex/amsfonts/amsfonts.sty
+Package: amsfonts 2009/06/22 v3.00 Basic AMSFonts support
+\@emptytoks=\toks16
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 96.
+))
+(/usr/share/texmf-texlive/tex/latex/amscls/amsthm.sty
+Package: amsthm 2004/08/06 v2.20
+\thm@style=\toks17
+\thm@bodyfont=\toks18
+\thm@headfont=\toks19
+\thm@notefont=\toks20
+\thm@headpunct=\toks21
+\thm@preskip=\skip43
+\thm@postskip=\skip44
+\thm@headsep=\skip45
+\dth@everypar=\toks22
+)
+(/usr/share/texmf-texlive/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2000/07/18 v2.13 AMS math features
+\@mathmargin=\skip46
+
+For additional information on amsmath, use the `?' option.
+(/usr/share/texmf-texlive/tex/latex/amsmath/amstext.sty
+Package: amstext 2000/06/29 v2.01
+
+(/usr/share/texmf-texlive/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0
+\@emptytoks=\toks23
+\ex@=\dimen107
+))
+(/usr/share/texmf-texlive/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d
+\pmbraise@=\dimen108
+)
+(/usr/share/texmf-texlive/tex/latex/amsmath/amsopn.sty
+Package: amsopn 1999/12/14 v2.01 operator names
+)
+\inf@bad=\count91
+LaTeX Info: Redefining \frac on input line 211.
+\uproot@=\count92
+\leftroot@=\count93
+LaTeX Info: Redefining \overline on input line 307.
+\classnum@=\count94
+\DOTSCASE@=\count95
+LaTeX Info: Redefining \ldots on input line 379.
+LaTeX Info: Redefining \dots on input line 382.
+LaTeX Info: Redefining \cdots on input line 467.
+\Mathstrutbox@=\box26
+\strutbox@=\box27
+\big@size=\dimen109
+LaTeX Font Info:    Redeclaring font encoding OML on input line 567.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 568.
+\macc@depth=\count96
+\c@MaxMatrixCols=\count97
+\dotsspace@=\muskip10
+\c@parentequation=\count98
+\dspbrk@lvl=\count99
+\tag@help=\toks24
+\row@=\count100
+\column@=\count101
+\maxfields@=\count102
+\andhelp@=\toks25
+\eqnshift@=\dimen110
+\alignsep@=\dimen111
+\tagshift@=\dimen112
+\tagwidth@=\dimen113
+\totwidth@=\dimen114
+\lineht@=\dimen115
+\@envbody=\toks26
+\multlinegap=\skip47
+\multlinetaggap=\skip48
+\mathdisplay@stack=\toks27
+LaTeX Info: Redefining \[ on input line 2666.
+LaTeX Info: Redefining \] on input line 2667.
+)
+(/var/lib/texmf/tex/generic/babel/babel.sty
+Package: babel 2008/07/06 v3.8l The Babel package
+
+(/usr/share/texmf-texlive/tex/generic/babel/english.ldf
+Language: english 2005/03/30 v3.3o English support from the babel system
+
+(/usr/share/texmf-texlive/tex/generic/babel/babel.def
+File: babel.def 2008/07/06 v3.8l Babel common definitions
+\babel@savecnt=\count103
+\U@D=\dimen116
+)
+\l@canadian = a dialect from \language\l@american 
+\l@australian = a dialect from \language\l@british 
+\l@newzealand = a dialect from \language\l@british 
+)
+(/usr/share/texmf-texlive/tex/generic/babel/finnish.ldf
+Language: finnish 2007/10/20 v1.3q Finnish support from the babel system
+Package babel Info: Making " an active character on input line 89.
+))
+(/usr/share/texmf-texlive/tex/latex/base/inputenc.sty
+Package: inputenc 2008/03/30 v1.1d Input encoding file
+\inpenc@prehook=\toks28
+\inpenc@posthook=\toks29
+
+(/usr/share/texmf-texlive/tex/latex/base/latin1.def
+File: latin1.def 2008/03/30 v1.1d Input encoding file
+))
+(/usr/share/texmf-texlive/tex/latex/graphics/graphicx.sty
+Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texmf-texlive/tex/latex/graphics/graphics.sty
+Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texmf-texlive/tex/latex/graphics/trig.sty
+Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
+)
+(/etc/texmf/tex/latex/config/graphics.cfg
+File: graphics.cfg 2009/08/28 v1.8 graphics configuration of TeX Live
+)
+Package graphics Info: Driver file: dvips.def on input line 91.
+
+(/usr/share/texmf-texlive/tex/latex/graphics/dvips.def
+File: dvips.def 1999/02/16 v3.0i Driver-dependant file (DPC,SPQR)
+))
+\Gin@req@height=\dimen117
+\Gin@req@width=\dimen118
+)
+(/usr/share/texmf-texlive/tex/latex/tocbibind/tocbibind.sty
+Package: tocbibind 2009/09/04 v1.5i extra ToC listings
+
+
+Package tocbibind Note: The document has chapter divisions.
+
+
+Package tocbibind Note: Using chapter style headings, unless overridden.
+
+) (/usr/share/texmf-texlive/tex/latex/mdwtools/sverb.sty
+Package: sverb 1996/05/08 1.3 Verbatim typesetting
+\svtab=\dimen119
+\listingindent=\dimen120
+\sv@writefile=\write3
+\sv@nestcount=\count104
+)
+(/usr/share/texmf-texlive/tex/latex/listings/listings.sty
+\lst@mode=\count105
+\lst@gtempboxa=\box28
+\lst@token=\toks30
+\lst@length=\count106
+\lst@currlwidth=\dimen121
+\lst@column=\count107
+\lst@pos=\count108
+\lst@lostspace=\dimen122
+\lst@width=\dimen123
+\lst@newlines=\count109
+\lst@lineno=\count110
+\lst@maxwidth=\dimen124
+
+(/usr/share/texmf-texlive/tex/latex/listings/lstmisc.sty
+File: lstmisc.sty 2007/02/22 1.4 (Carsten Heinz)
+\c@lstnumber=\count111
+\lst@skipnumbers=\count112
+\lst@framebox=\box29
+)
+(/usr/share/texmf-texlive/tex/latex/listings/listings.cfg
+File: listings.cfg 2007/02/22 1.4 listings configuration
+))
+Package: listings 2007/02/22 1.4 (Carsten Heinz)
+
+(/usr/share/texmf-texlive/tex/latex/fancyhdr/fancyhdr.sty
+\fancy@headwidth=\skip49
+\f@ncyO@elh=\skip50
+\f@ncyO@erh=\skip51
+\f@ncyO@olh=\skip52
+\f@ncyO@orh=\skip53
+\f@ncyO@elf=\skip54
+\f@ncyO@erf=\skip55
+\f@ncyO@olf=\skip56
+\f@ncyO@orf=\skip57
+) (./itpackage.sty
+Package: itpackage 2007/07/21 v. 1.0 Sami Nuuttila samnuutt@utu.fi
+
+itpackage.sty -- additional definitions for it-dept...
+\etttmpwidth=\skip58
+\c@apppage=\count113
+) (/usr/share/texmf-texlive/tex/latex/algorithmicx/algpseudocode.sty
+Package: algpseudocode 
+
+(/usr/share/texmf-texlive/tex/latex/base/ifthen.sty
+Package: ifthen 2001/05/26 v1.1c Standard LaTeX ifthen package (DPC)
+)
+(/usr/share/texmf-texlive/tex/latex/algorithmicx/algorithmicx.sty
+Package: algorithmicx 2005/04/27 v1.2 Algorithmicx
+
+Document Style algorithmicx 1.2 - a greatly improved `algorithmic' style
+\c@ALG@line=\count114
+\c@ALG@rem=\count115
+\c@ALG@nested=\count116
+\ALG@tlm=\skip59
+\ALG@thistlm=\skip60
+\c@ALG@Lnr=\count117
+\c@ALG@blocknr=\count118
+\c@ALG@storecount=\count119
+\c@ALG@tmpcounter=\count120
+\ALG@tmplength=\skip61
+)
+Document Style - pseudocode environments for use with the `algorithmicx' style
+) (/usr/share/texmf-texlive/tex/latex/algorithms/algorithm.sty
+Package: algorithm 2009/08/24 v0.1 Document Style `algorithm' - floating enviro
+nment
+
+(/usr/share/texmf-texlive/tex/latex/float/float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count121
+\float@exts=\toks31
+\float@box=\box30
+\@float@everytoks=\toks32
+\@floatcapt=\box31
+)
+\@float@every@algorithm=\toks33
+\c@algorithm=\count122
+)
+(/usr/share/texmf-texlive/tex/latex/ltxmisc/boxedminipage.sty)
+(/usr/share/texmf-texlive/tex/latex/seqsplit/seqsplit.sty
+Package: seqsplit 2006/08/07 v0.1 Splitting long sequences (DNA, RNA, proteins,
+ etc.) 
+)
+(/usr/share/texmf-texlive/tex/latex/caption/caption.sty
+Package: caption 2009/10/09 v3.1k Customizing captions (AR)
+
+(/usr/share/texmf-texlive/tex/latex/caption/caption3.sty
+Package: caption3 2009/10/09 v3.1k caption3 kernel (AR)
+\captionmargin=\dimen125
+\captionmargin@=\dimen126
+\captionwidth=\dimen127
+\caption@indent=\dimen128
+\caption@parindent=\dimen129
+\caption@hangindent=\dimen130
+)
+\c@ContinuedFloat=\count123
+Package caption Info: float package is loaded.
+Package caption Info: listings package is loaded.
+)
+(/usr/share/texmf-texlive/tex/latex/caption/subcaption.sty
+Package: subcaption 2008/08/31 v1.0b Adding subcaptions (AR)
+\c@subfigure=\count124
+\c@subtable=\count125
+)
+(/usr/share/texmf-texlive/tex/latex/pseudocode/pseudocode.sty
+** 
+** Document Style `pseudocode' - environment 
+** by D.L. Kreher and D.R. Stinson 
+** 
+** The pseudocode environment was originally developed for the book
+** Combinatorial Algorithms: Enumeration, Generation, and Search
+** CRC Press, 1999. 
+Package: pseudocode 
+\pcode@width=\skip62
+(/usr/share/texmf-texlive/tex/latex/fancybox/fancybox.sty
+Package: fancybox 2000/09/19 1.3
+
+Style option: `fancybox' v1.3 <2000/09/19> (tvz)
+\@fancybox=\box32
+\shadowsize=\dimen131
+\@Sbox=\box33
+\do@VerbBox=\toks34
+\the@fancyput=\toks35
+\this@fancyput=\toks36
+\EndVerbatimTokens=\toks37
+\Verbatim@Outfile=\write4
+\Verbatim@Infile=\read1
+)
+\c@pseudocode=\count126
+\c@pseudonum=\count127
+) (/usr/share/texmf-texlive/tex/latex/graphics/color.sty
+Package: color 2005/11/14 v1.0j Standard LaTeX Color (DPC)
+
+(/etc/texmf/tex/latex/config/color.cfg
+File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
+)
+Package color Info: Driver file: dvips.def on input line 130.
+
+(/usr/share/texmf-texlive/tex/latex/graphics/dvipsnam.def
+File: dvipsnam.def 1999/02/16 v3.0i Driver-dependant file (DPC,SPQR)
+))
+(/usr/share/texmf-texlive/tex/latex/acronym/acronym.sty
+Package: acronym 2009/01/25 v1.34 Support for acronyms (Tobias Oetiker)
+
+(/usr/share/texmf-texlive/tex/latex/bigfoot/suffix.sty
+Package: suffix 2006/07/15 1.5 Variant command support
+)
+\AC@clearlist=\toks38
+) (./main.aux
+(./Introduction_Chapter_1.aux) (./NOC_Chapter_2.aux) (./ABM_Chapter_3.aux)
+(./MASON_Chapter_4.aux) (./Chapter_5.aux) (./3D_NoC_Model_Chapter_6.aux)
+(./Conclusion_Chapter_7.aux))
+\openout1 = `main.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 178.
+LaTeX Font Info:    ... okay on input line 178.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 178.
+LaTeX Font Info:    ... okay on input line 178.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 178.
+LaTeX Font Info:    ... okay on input line 178.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 178.
+LaTeX Font Info:    ... okay on input line 178.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 178.
+LaTeX Font Info:    ... okay on input line 178.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 178.
+LaTeX Font Info:    ... okay on input line 178.
+LaTeX Font Info:    Try loading font information for OT1+ptm on input line 178.
+
+
+(/usr/share/texmf-texlive/tex/latex/psnfss/ot1ptm.fd
+File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
+)
+*geometry auto-detecting driver*
+*geometry detected driver: dvips*
+-------------------- Geometry parameters
+paper: a4paper
+landscape: --
+twocolumn: --
+twoside: --
+asymmetric: --
+h-parts: 113.81102pt, 426.79135pt, 56.9055pt
+v-parts: 113.81102pt, 617.4248pt, 113.81102pt
+hmarginratio: --
+vmarginratio: --
+lines: --
+heightrounded: --
+bindingoffset: 0.0pt
+truedimen: --
+includehead: --
+includefoot: --
+includemp: --
+driver: dvips
+-------------------- Page layout dimensions and switches
+\paperwidth  597.50787pt
+\paperheight 845.04684pt
+\textwidth  426.79135pt
+\textheight 654.41338pt
+\oddsidemargin  41.54103pt
+\evensidemargin 41.54103pt
+\topmargin  0.0pt
+\headheight 12.0pt
+\headsep    24.0pt
+\footskip   30.0pt
+\marginparwidth 0.0pt
+\marginparsep   0.0pt
+\columnsep  10.0pt
+\skip\footins  10.8pt plus 4.0pt minus 2.0pt
+\hoffset 0.0pt
+\voffset 0.0pt
+\mag 1000
+
+(1in=72.27pt, 1cm=28.45pt)
+-----------------------
+\c@lstlisting=\count128
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: End \AtBeginDocument code.
+\eauthor=\box34
+\esauthor=\box35
+\etitle=\box36
+\authorwidth=\skip63
+\ehtitle=\box37
+\erevrone=\box38
+\erevrtwo=\box39
+\eyear=\box40
+\emonth=\box41
+\emonthfi=\box42
+\wt=\box43
+\wtfi=\box44
+\di=\box45
+\difi=\box46
+LaTeX Font Info:    Try loading font information for U+msa on input line 197.
+(/usr/share/texmf-texlive/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2009/06/22 v3.00 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 197.
+
+(/usr/share/texmf-texlive/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2009/06/22 v3.00 AMS symbols B
+)
+Overfull \hbox (2.47696pt too wide) in paragraph at lines 197--197
+[][]| 
+ []
+
+
+Overfull \hbox (23.99997pt too wide) in paragraph at lines 197--197
+[]
+ []
+
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 197.
+[1
+
+
+]
+\asiasanat=\box47
+\asiasanatwidth=\skip64
+
+Overfull \hbox (2.27495pt too wide) in paragraph at lines 202--202
+[][] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 202--203
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 206--207
+[]\OT1/ptm/m/n/12 T[]am[]an tut-kiel-man p[]a[]aasiallisena koh-tee-na on kol-m
+iu-lot-tei-sen agent-ti-poh-jai-sen
+ []
+
+
+Underfull \hbox (badness 1019) in paragraph at lines 206--207
+\OT1/ptm/m/n/12 NoC-mallin suun-nit-te-lu ja to-teu-tus. K[]aytimme MA-SON 3D -
+luokkia kol-miu-lot-tei-
+ []
+
+
+Underfull \hbox (badness 1072) in paragraph at lines 206--207
+\OT1/ptm/m/n/12 sen agent-ti-poh-jai-sen NoC-mallin luo-mi-seen. Mal-liin va-li
+t-tu to-po-lo-gia on 4x4 3D-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 206--207
+
+ []
+
+[2
+
+
+]
+\keywords=\box48
+\keywordswidth=\skip65
+
+Overfull \hbox (2.27495pt too wide) in paragraph at lines 210--210
+[][] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 210--211
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 214--215
+
+ []
+
+[0
+
+
+]
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <24.88> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 243.
+ (./main.toc [1
+
+
+])
+\tf@toc=\write5
+\openout5 = `main.toc'.
+
+ [2] (./main.lof)
+\tf@lof=\write6
+\openout6 = `main.lof'.
+
+ [3
+
+
+] (./ListOfAcronyms.tex) [4
+
+
+]
+\openout2 = `Introduction_Chapter_1.aux'.
+
+
+(./Introduction_Chapter_1.tex
+Chapter 1.
+[1
+
+
+
+]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[2]) [3]
+\openout2 = `NOC_Chapter_2.aux'.
+
+ (./NOC_Chapter_2.tex
+Chapter 2.
+File: Mesh_topology.eps Graphic file (type eps)
+<Mesh_topology.eps>
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <17.28> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 17.
+ [4
+
+
+
+]
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <14.4> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 21.
+File: point_to_point.eps Graphic file (type eps)
+ <point_to_point.eps>
+File: Mesh_topology_2.eps Graphic file (type eps)
+ <Mesh_topology_2.eps> [5] [6]
+File: Ring.eps Graphic file (type eps)
+
+<Ring.eps>
+File: torus.eps Graphic file (type eps)
+ <torus.eps>
+File: torusfolded.eps Graphic file (type eps)
+ <torusfolded.eps>
+File: octagon.eps Graphic file (type eps)
+ <octagon.eps> [7] [8]
+File: fat_tree.eps Graphic file (type eps)
+ <fat_tree.eps>
+File: butterfly.eps Graphic file (type eps)
+
+<butterfly.eps> [9]
+File: Optimized_mesh.eps Graphic file (type eps)
+ <Optimized_mesh.eps>
+File: hybrid.eps Graphic file (type eps)
+ <hybrid.eps> [10] [11] [12] [13])
+[14]
+\openout2 = `ABM_Chapter_3.aux'.
+
+ (./ABM_Chapter_3.tex
+Chapter 3.
+[15
+
+
+
+] [16]
+Overfull \hbox (3.79695pt too wide) in paragraph at lines 40--41
+[]\OT1/ptm/m/n/12 Agent Based Mod-el-ing and Sim-u-la-tion (ABMS) has roots in 
+the field of MAS, robotics,
+ []
+
+[17]
+File: agent.eps Graphic file (type eps)
+ <agent.eps> [18] [19] [20]
+File: noc.eps Graphic file (type eps)
+ <noc.eps> [21]
+Overfull \hbox (3.04463pt too wide) in paragraph at lines 125--126
+\OT1/ptm/m/n/12 There are sev-eral Com-piled mul-ti-a-gent sim-u-la-tors, for e
+x-am-ple, SWARM [[]], RePast [[],
+ []
+
+[22] [23]) [24]
+\openout2 = `MASON_Chapter_4.aux'.
+
+ (./MASON_Chapter_4.tex
+Chapter 4.
+[25
+
+
+
+] [26]
+LaTeX Font Info:    Try loading font information for OT1+pcr on input line 27.
+ (/usr/share/texmf-texlive/tex/latex/psnfss/ot1pcr.fd
+File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
+)
+File: Mason_layers.eps Graphic file (type eps)
+
+<Mason_layers.eps> [27] [28] [29] [30] [31] [32]) [33]
+\openout2 = `Chapter_5.aux'.
+
+ (./Chapter_5.tex
+Chapter 5.
+[34
+
+
+
+]
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10.95> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 38.
+ [35]
+File: 2DmeshXY.eps Graphic file (type eps)
+ <2DmeshXY.eps> [36]
+File: noc2d.eps Graphic file (type eps)
+ <noc2d.eps> [37]
+Overfull \hbox (2.7917pt too wide) in paragraph at lines 94--95
+\OT1/ptm/m/n/12 Routing al-go-rithm. Self rout-ing agent gets the lo-ca-tion in
+-for-ma-tion from the  \OT1/pcr/m/n/12 Noc2D
+ []
+
+) [38]
+\openout2 = `3D_NoC_Model_Chapter_6.aux'.
+
+ (./3D_NoC_Model_Chapter_6.tex
+Chapter 6.
+File: Level's_of_Heirarchy.eps Graphic file (type eps)
+<Level's_of_Heirarchy.eps> [39
+
+
+
+] [40] [41]
+Underfull \hbox (badness 10000) in paragraph at lines 93--95
+[][]\OT1/ptm/m/n/10.95 2:[]6:[]10:[]14:[]18:[]22:[]26:[]30:[]34:[]38:
+ []
+
+[42] [43] [44] [45]
+File: Directions_with_respect_to_conditional_satements.eps Graphic file (type e
+ps)
+ <Directions_with_respect_to_conditional_satements.eps>
+[46]
+File: class_diagram.eps Graphic file (type eps)
+ <class_diagram.eps> [47] [48] [49]
+File: noc3d.eps Graphic file (type eps)
+ <noc3d.eps> [50] [51]) [52]
+\openout2 = `Conclusion_Chapter_7.aux'.
+
+
+(./Conclusion_Chapter_7.tex
+Chapter 7.
+[53
+
+
+
+]) [54] [55
+
+
+] [56] [57]
+Underfull \hbox (badness 4144) in paragraph at lines 365--366
+[]\OT1/ptm/m/n/12 Balch,T.1997. Team-bot Sim-u-la-tion En-vi-ron-ment ``http://
+www.cs.cmu.edu/ tr-
+ []
+
+[58]
+Underfull \hbox (badness 10000) in paragraph at lines 393--394
+[]\OT1/ptm/m/n/12 GEOMASON ``http://cs.gmu.edu/$\OMS/cmsy/m/n/12 ^^X$\OT1/ptm/m
+/n/12 eclab/projects/mason/extensions/geomason/''.
+ []
+
+[59]
+Underfull \hbox (badness 10000) in paragraph at lines 397--398
+[]\OT1/ptm/m/n/12 Coletti, M. (2013, Jan-uary). The Ge-o-Ma-son Cook-book.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 397--398
+\OT1/ptm/m/n/12 ``http://cs.gmu.edu/$\OMS/cmsy/m/n/12 ^^X$\OT1/ptm/m/n/12 eclab
+/projects/mason/extensions/geomason/geomason.pdf''.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 399--400
+[]\OT1/ptm/m/n/12 GMU ``http://cs.gmu.edu/ eclab/pro-ject-s/-ma-son/ex-ten-sion
+-s/-ge-o-ma-son/-class-doc-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 401--402
+[]\OT1/ptm/m/n/12 GMU ``http://cs.gmu.edu/ eclab/pro-ject-s/-ma-son/ex-ten-sion
+-s/-ge-o-ma-son/-class-doc-
+ []
+
+
+Overfull \hbox (32.67429pt too wide) in paragraph at lines 405--406
+[]\OT1/ptm/m/n/12 GMU ``http://cs.gmu.edu/$\OMS/cmsy/m/n/12 ^^X$\OT1/ptm/m/n/12
+ eclab/projects/mason/docs/classdocs/sim/util/Double3D.html''.
+ []
+
+[60] (./main.aux (./Introduction_Chapter_1.aux) (./NOC_Chapter_2.aux)
+(./ABM_Chapter_3.aux) (./MASON_Chapter_4.aux) (./Chapter_5.aux)
+(./3D_NoC_Model_Chapter_6.aux) (./Conclusion_Chapter_7.aux)) ) 
+Here is how much of TeX's memory you used:
+ 6598 strings out of 493849
+ 91084 string characters out of 1152846
+ 163693 words of memory out of 3000000
+ 9685 multiletter control sequences out of 15000+50000
+ 16880 words of font info for 52 fonts, out of 3000000 for 9000
+ 714 hyphenation exceptions out of 8191
+ 36i,12n,50p,1919b,458s stack positions out of 5000i,500n,10000p,200000b,50000s
+
+Output written on main.dvi (67 pages, 154716 bytes).

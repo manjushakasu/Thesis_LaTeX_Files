@@ -1,0 +1,438 @@
+%
+% Document template suitable for use as a latex master-file for masters
+% thesis in University of Turku Laboratory of Electronics and Information
+% Technology. Relies on itpackage.sty for additional definitions.
+%
+% Sami Nuuttila (samnuutt@utu.fi) 
+%
+% Last mod 24.9.2009:
+% 
+% Why:
+%  · No need for anyone to invent the wheel again. You can of course do that
+%    if you wish - TeX'll even let you invent many different kinds of wheels
+%  · That said, if you come up with a great new wheel I'd like to hear about 
+%    it - it might even end up being used here 
+% 
+% Features:
+%  · Proper page sizes as required by university guide for students:
+%      · proper font sizes as well as linespacings
+%      · proper size of margins
+%  · Generic title page:
+%      · \gentitle
+%  · Generic abstract page(s):
+%      · \begin{itabstract}{Keywords}
+%          abstract text
+%        \end{itabstract}
+%      · \begin{ittiivis}...\end{ittiivis} provides finnish version
+%         · ittiivis defaults to finnish so no need to issue 
+%           \selectlanguage{finnish}
+%      · total number of pages as well as total number of pages in appendices
+%        are automagically handled
+%  · Entry environment:
+%      · \begin{entry}[widest label]
+%          \item[1st label text] ...
+%          \item[2nd label text] ...
+%        \end{entry}
+%      · the actual items are aligned to suit the widest label, which is
+%        given as an argument to the environment
+%  · Use of specific latex packages to ease in formatting the thesis:
+%      · format table of contents to have bibliography shown as references
+%        as well as other fixes           (tocbibind)
+%      · enhanced verbatim handling       (sverb)
+%      · source code inclusion            (listings)
+%      · handling of headers and footers  (fancyhdr)
+%
+%      · consultation of the manuals of these packages is strongly
+%        encouraged 
+%
+% Assumptions:
+%  · itpackage.sty file is available 
+%  · each chapter is as a separate file which is read in with e.g. \input
+%   
+% Miscellaneous:
+%  · comments are welcome
+%  · should a required package be missing see http://www.ctan.org/ 
+%  · http://www.ctan.org/tex-archive/info/lshort/english/lshort.pdf
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% load all required packages
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% document is based on report class
+\documentclass[a4paper,12pt]{report}
+
+%\usepackage[top=1.5in, bottom=1.5in, left=1.5in, right=1in]{geometry}
+\usepackage[top=4cm, bottom=4cm, left=4cm, right=2cm]{geometry}
+
+
+
+% load ams-packages for maths
+\usepackage{amssymb,amsthm,amsmath}
+
+% load babel-package for automatic hyphenation
+\usepackage[english,finnish]{babel}
+\usepackage[latin1]{inputenc}
+
+% load graphicx package
+%   · automagically select proper parameters depending on whether
+%     we're running pdflatex or latex
+%   · specify \includegraphics{file} without the file extension
+%     (.eps /.pdf (/ .png / .jpeg / ...)), tex should select the proper file
+%
+\usepackage{ifpdf}
+\usepackage{graphicx}
+%% !!! NOTE: if you have old LaTeX distribution then you might need to
+%% use the following instead
+%% \newif\ifpdf
+%% \ifx\pdfoutput\undefined
+%%   \pdffalse
+%% \else
+%%   \pdfoutput=1
+%%   \pdftrue
+%% \fi
+%% % if graphicx complains about option clash remove the [pdftex] option
+%% \ifpdf
+%%   \usepackage[pdftex]{graphicx}
+%% \else
+%%   \usepackage[dvips]{graphicx}
+%% \fi
+
+
+% load tocbibind package 
+%   · do not include table of contents in itself
+%   · convert the name of bibliography to references
+\usepackage[nottoc]{tocbibind}
+\settocbibname{References}
+
+% load sverb package
+%   · enhanced handling of verbatim stuff; listing environment
+\usepackage{sverb}
+
+% load listings package
+%   · handle inclusion of source code
+\usepackage{listings}
+
+% load fancyheaders package
+%   · the actual headers and footers are set later
+\usepackage{fancyhdr}
+
+% load itpackage 
+%   · additional defines and stuff
+
+\usepackage{itpackage}
+\usepackage{algpseudocode}
+\usepackage{algorithm}
+\usepackage{boxedminipage}
+\usepackage{float}
+\usepackage{seqsplit}
+
+
+
+\usepackage{caption}
+\usepackage{subcaption}
+
+
+
+\usepackage{amsmath,pseudocode}
+\usepackage[dvips]{color}
+
+
+
+
+\newcommand{\algvar}[1]{\text{\ttfamily\upshape#1}}
+\makeatletter
+\newcommand{\SWITCH}{\mbox{\bfseries switch }}
+\renewcommand{\CASE}{\mbox{ \bfseries case }}
+\newcommand{\CASEELSE}{\mbox{ \bfseries else }}
+\makeatother
+
+\usepackage{acronym}
+
+% uncomment the following snippet to get rid of Luku/Chapter text at the
+% beginning of each Chapter... 
+%\makeatletter
+%\renewcommand{\@chapapp}{\relax}
+%\renewcommand{\@makechapterhead}[1]{%
+%  \vspace*{50\p@}%
+%  {\parindent \z@ \raggedright \normalfont
+%    \ifnum \c@secnumdepth >\m@ne
+%        \huge\bfseries \@chapapp\space \thechapter\space\space
+%    \fi
+%    \interlinepenalty\@M
+%    \Huge \bfseries #1\par\nobreak
+%    \vskip 40\p@
+%  }}
+%\makeatother
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% main document starts here
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%%% fill in your information below
+\workinfo{Manjusha Kasu}
+{Design and Implementation of a 3D Network on Chip Agent Based Model}
+{Tomi Westerlund}
+{Juha Plosila}
+{2014}
+{January}
+{Tammikuu}
+%% set the type of your thesis (Diplomityö, TkK -tutkielma, etc.) below
+\worktype{Master of Science in Technology Thesis}{Master of Science in Technology Thesis} 
+%% set the laboratory or field of study
+\deptinfo{Embedded Computer Systems Laboratory}{Embedded Computer systems}
+
+
+% generate the title page 
+\gentitle
+
+% generate tiivistelma
+
+
+\begin{ittiivis}{Agent, Agent-Based Modeling, Multi-Agent Simulator of Neighborhoods (MASON), Network on Chip (NoC)}
+
+Tässä tutkielmassa tarkastellaan verkkopiirin (Network on Chip, (NoC)) agenttipohjaisen mallin suunnittelemisen toteutettavuutta käyttäen moniagenttipohjaista  MultiAgent Simulator of Neighborhoods (MASON) suunnittelu- ja simulointiympäristöä, joka on toteutettu Java-ohjelmointikielellä. Esitetyllä agenttipohjaisella NoC-mallilla on mahdollista monitoroida pakettien reititysprosessia verkossa.. 
+
+Tämän tutkielman pääasiallisena kohteena on kolmiulotteisen agenttipohjaisen NoC-mallin suunnittelu ja toteutus. Käytimme MASON 3D -luokkia kolmiulotteisen agenttipohjaisen NoC-mallin luomiseen. Malliin valittu topologia on 4x4 3D-silmukkaverkkotopologia. Kommunikaatio NoC-mallin prosessointielementtien välillä tapahtuu XYZ-reititysalgoritmia käyttäen. Paketit, joita tässä työssä kutsutaan agenteiksi, kykenevät itsenäisesti liikkumaan verkossa noudattaen valittua reititysalgoritmia. Malli mahdollistaa pakettien dynaamisen seurannan NoC-mallissa. Tämän lisäksi toteutimme älykkäitä agentteja, jotka liikkuu verkossa satunnaisesti ja seuraa verkossa tapahtuvaa liikennettä hyödyntäen reitittimien keräämää tietoa.
+\end{ittiivis}
+
+% if your thesis is in english then this is also required (is it???)
+\begin{itabstract}{Agent, Agent-Based Modeling, Multi-Agent Simulator of Neighborhoods (MASON), Network on Chip (NoC)}
+
+In this thesis, we examine the feasibility of designing a Network on Chip (NoC) agent based model using a multi agent simulation toolkit MASON (Multi-Agent Simulator of Neighborhoods). MASON is a Java based modeling and simulation toolkit for fast discrete-event multiagent simulations. The proposed NoC agent based model allows us to monitor routing process of packets in the network. Packets used in this model are agents that follows routing algorithm to navigate themselves from source to destination in the network. 
+
+The main focus of the thesis is on the design and implementation of a 3D NoC agent based model. We used MASON 3D classes to create 3D NoC agent based model. The topology chosen for the model is a 4x4 3D mesh network topology. The 3D NoC agent based model consists of the following elements: agents who follow XYZ-routing algorithm, intelligent agents who move randomly in the network observing its operation using the information gathered by network nodes. All the agents are autonomous and act according to specific rules. We can dynamically monitor the behavior of agents and the routing process of packets.
+\end{itabstract}
+
+% select language here (note that english also needs to set enclname)
+\selectlanguage{english}
+%\selectlanguage{english}\def\enclname{Appendices}
+
+% empty pagestyle for table of contents etc. 
+%
+% the redefinition of plain style works also for 1st pages of chapters,
+% which is the default in report class. Just state \thispagestyle{empty}
+% after \chapter{something} if you want empty style for the 1st pages. 
+%
+\pagestyle{empty}
+\fancypagestyle{plain}{
+  \fancyhf{}
+  \renewcommand{\headrulewidth}{0 pt}
+}
+
+% roman numbering for table of contents etc.
+\pagenumbering{roman}
+
+% insert table of contents, list of figures, list of tables
+%
+% setting the counter to zero effectively removes the page number from
+% the toc, lof etc. entries in the toc since there is no roman numeral
+% for zero ;-) (if you want them without numbering)
+%
+%\setcounter{page}{0}
+\tableofcontents
+\clearpage
+%\setcounter{page}{0}
+\listoffigures 
+\clearpage
+%\setcounter{page}{0}
+%\listoftables
+
+
+% possibly insert 'list of acronyms'
+%
+%   · create a chapter called List Of Acronyms (or whatever), which
+%     should contain all your acronym definitions, e.g. 
+%     \chapter{List Of Acronyms} 
+%   · the secnumdepth trickery is needed because acronyms are as a
+%     standard chapter and we are faking '\listofacronyms'
+%
+\setcounter{secnumdepth}{-1}
+\input{ListOfAcronyms.tex}
+\setcounter{secnumdepth}{2}
+
+
+
+
+
+% setup page numbering, page counter, etc.
+\startpages
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% hi ho hi ho it's off to work we go....
+%
+% from now on you're on your own -- good luck!
+%
+% that is to say that the actual thesis should come here 
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\include {"Introduction_Chapter_1"}
+\include {"NOC_Chapter_2"}
+\include {"ABM_Chapter_3"}
+\include {"MASON_Chapter_4"}
+\include {"Chapter_5"}
+\include {"3D_NoC_Model_Chapter_6"}
+\include {"Conclusion_Chapter_7"} 
+
+
+%\input{file name of chapter xxx}
+%\input{file name of chapter yyy}
+%\input{file name of chapter zzz}
+%\input{and so on...}
+
+% insert references
+%  · included unsrtf.bst provides finnish language version of unsrt
+%\bibliographystyle{unsrt}
+\begin{thebibliography}{99}
+
+\bibitem{macal2010} Macal, C. M., \& North, M. J. (2010). Tutorial on agent-based modelling and simulation. Journal of Simulation, 4(3).
+
+\bibitem{Pasricha} Pasricha, S., \& Dutt, N. (2008). On-chip communication architectures: system on chip interconnect. Morgan Kaufmann.
+
+\bibitem{Duato2003} Duato, J. (2003). Interconnection networks an engineering approach. Morgan Kaufmann.
+
+\bibitem{Kumar} Kumar, S., Jantsch, A., Soininen, J. P., Forsell, M., Millberg, M., Oberg, J., ... \& Hemani, A. (2002). A network on chip architecture and design methodology. In VLSI, 2002. Proceedings. IEEE Computer Society Annual Symposium. IEEE.
+
+\bibitem{Tortosa} Sigüenza-Tortosa, D., Ahonen, T., \& Nurmi, J. (2004). Issues in the development of a practical NoC: the Proteo concept. Integration, the VLSI Journal.
+
+\bibitem{Smit} Wolkotte, P. T., Smit, G. J., Rauwerda, G. K., \& Smit, L. T. (2005, April). An energy-efficient reconfigurable circuit-switched network-on-chip. In Parallel and Distributed Processing Symposium, 2005. Proceedings. 19th IEEE International. IEEE.
+
+\bibitem{Karim} Karim, F., Nguyen, A., \& Dey, S. (2002). An interconnect architecture for networking systems on chips. Micro, IEEE.
+
+\bibitem{Pasricha2006} Pasricha, S., Dutt, N.,\& Ben-Romdhane, M. (2006, January). Constraint-driven bus matrix synthesis for MPSoC. In Proceedings of the 2006 Asia and South Pacific Design Automation Conference. IEEE Press.
+
+\bibitem{Guerrier2000} Guerrier, P., \& Greiner, A. (2000, January). A generic architecture for on-chip packet-switched interconnections. In Proceedings of the conference on Design, automation and test in Europe. ACM.
+
+\bibitem{Leiserson1985} Leiserson, C. E. (1985). Fat-trees: universal networks for hardware-efficient supercomputing. Computers, IEEE Transactions.
+
+\bibitem{Adriahantenaina} Adriahantenaina, A., Charlery, H., Greiner, A., Mortiez, L., \& Zeferino, C. A. (2003). SPIN: a scalable, packet switched, on-chip micro-network. In Design, Automation and Test in Europe Conference and Exhibition, 2003. IEEE.
+
+\bibitem{Goossens} Goossens, K., Dielissen, J., \& Radulescu, A. (2005). Æthereal network on chip: concepts, architectures, and implementations. Design \& Test of Computers, IEEE.
+ 
+\bibitem{Osso} Dall'Osso, M., Biccari, G., Giovannini, L., Bertozzi, D., \& Benini, L. (2012, September). Xpipes: a latency insensitive parameterized network-on-chip architecture for multi-processor SoCs. In Computer Design (ICCD), 2012 IEEE 30th International Conference. IEEE.
+
+\bibitem{Bjerregaard} Bjerregaard, T., \& Sparsø, J. (2005). The MANGO clockless network-on-chip: Concepts and implementation (Doctoral dissertation, Technical University of DenmarkDanmarks Tekniske Universitet, Department of Information TechnologyInstitut for Informationsteknologi).
+
+\bibitem{Dally} Dally, W. J., \& Towles, B. P. (2004). Principles and practices of interconnection networks. Morgan Kaufmann.
+
+\bibitem{Dehyadgari} Dehyadgari, M., Nickray, M., Afzali-Kusha, A., \& Navabi, Z. (2005, December). Evaluation of pseudo adaptive XY routing using an object oriented model for NoC. In Microelectronics, 2005. ICM 2005. The 17th International Conference. IEEE.
+
+\bibitem{Bobda} Bobda, C., Ahmadinia, A., Majer, M., Teich, J., Fekete, S., \& van der Veen, J. (2005, August). Dynoc: A dynamic infrastructure for communication in dynamically reconfugurable devices. In Field Programmable Logic and Applications, 2005. International Conference. IEEE.
+
+\bibitem{Kariniemi} Kariniemi, H., \& Nurmi, J. (2005). Arbitration and routing schemes for on-chip packet networks. In Interconnect-centric design for advanced SoC and NoC. Springer US.
+
+\bibitem{Kim} Kim, K., Lee, S. J., Lee, K., \& Yoo, H. J. (2005, May). An arbitration look-ahead scheme for reducing end-to-end latency in networks on chip. In Circuits and Systems, 2005. ISCAS 2005. IEEE International Symposium. IEEE.
+
+\bibitem{Bartic} Bartic, T. A., Mignolet, J. Y., Nollet, V., Marescaux, T., Verkest, D., Vernalde, S., \& Lauwereins, R. (2005). Topology adaptive network-on-chip design and implementation. IEE Proceedings-Computers and Digital Techniques, 152(4).
+
+\bibitem{Pirretti} Pirretti, M., Link, G. M., Brooks, R. R., Vijaykrishnan, N., Kandemir, M., \& Irwin, M. J. (2004, February). Fault tolerant algorithms for network-on-chip interconnect. In VLSI, 2004. Proceedings. IEEE Computer society Annual Symposium. IEEE.
+
+\bibitem{Dally2001} Dally, W. J., \& Towles, B. (2001). Route packets, not wires: On-chip interconnection networks. In Design Automation Conference, 2001. Proceedings. IEEE.
+
+\bibitem{Kim2005} Kim, J., Park, D., Theocharides, T., Vijaykrishnan, N., \& Das, C. R. (2005, June). A low latency router supporting adaptivity for on-chip interconnects. In Proceedings of the 42nd annual Design Automation Conference. ACM.
+
+\bibitem{Hu} Hu, J., \& Marculescu, R. (2004, June). DyAD: smart routing for networks-on-chip. In Proceedings of the 41st annual Design Automation Conference. ACM.
+
+\bibitem{Andreasson} Andreasson, D., \& Kumar, S. (2005, May). Slack-time aware routing in NoC systems. In Circuits and Systems, 2005. ISCAS 2005. IEEE International Symposium. IEEE.
+
+\bibitem{Feige} Feige, U., \& Raghavan, P. (1992, October). Exact analysis of hot-potato routing. In Foundations of Computer Science, 1992. Proceedings., 33rd Annual Symposium. IEEE.
+
+\bibitem{Barbosa2011} Barbosa, J., \& Leitão, P. (2011, July). Simulation of multi-agent manufacturing systems using agent-based modelling platforms. In Industrial Informatics (INDIN), 2011 9th IEEE International Conference. IEEE.
+
+\bibitem{christian06} Castle, C. J., \& Crooks, A. T. (2006). Principles and concepts of agent-based modelling for developing geospatial simulations.
+
+\bibitem{peer} Siebers, P. O., \& Aickelin, U. (2008). Introduction to multi-agent simulation. (2008).
+
+\bibitem{Dunin2010} Dunin-Keplicz, B., \& Verbrugge, R. (2011). Teamwork in multi-agent systems: A formal approach (Vol. 21). John Wiley \& Sons.
+
+\bibitem{Bonabeau2001} Bonabeau, E. (2002). Agent-based modeling: Methods and techniques for simulating human systems. Proceedings of the National Academy of Sciences of the United States of America, 99(Suppl 3).
+
+\bibitem{macal2006} Charles, M. M., \& Michael, J. N. (2006). Tutorial on agent-based modeling and simulation part 2: how to model with agents. In Proceedings of the 38th Winter Simulation Conference, Monterey, CA .
+
+\bibitem{rob} Allan, R. J. (2010). Survey of agent based modelling and simulation tools. Science \& Technology Facilities Council.
+
+\bibitem{Balch2000} Balch,T.1997. Teambot Simulation Environment ``http://www.cs.cmu.edu/~trb/TeamBots/''. Cited on 20th January 2014.
+
+\bibitem{MASON2005} Luke, S., Cioffi-Revilla, C., Panait, L., Sullivan, K., \& Balan, G. (2005). Mason: A multiagent simulation environment. Simulation, 81(7).
+
+\bibitem{Paul2000} Johnson, P., \& Lancaster, A. (1999). Swarm user guide. Lawrence, KS: University of Kansas.
+
+\bibitem{Repast2001} Collier, N. "Repast: An agent based modelling toolkit for java." (2001). 
+
+\bibitem{Repast} Repast ``http://repast.sourceforge.net/``. Cited on 20th January 2014.
+
+\bibitem{Miles2001} Parker, M. T. (2001). What is Ascape and why should you care. Journal of Artificial Societies and Social Simulation, 4(1). 
+
+\bibitem{Ascape} Ascape ``http://jasss.soc.surrey.ac.uk/4/1/5.html''. Cited on 20th January 2014.
+
+\bibitem{MASON} MASON ``http://cs.gmu.edu/$\sim$eclab/projects/mason/''. Cited on 20th January 2014.
+
+\bibitem{MASONMANUAL2011} Luke, S. (2011). Multiagent Simulation And the MASON Library. George Mason University.
+
+\bibitem{Mitchel} Resnick, M. (1994). Turtles, termites, and traffic jams: Explorations in massively parallel microworlds. Mit Press.
+
+\bibitem{StarLogo} StarLogo ''http://education.mit.edu/starlogo/``. Cited on 20th January 2014.
+
+\bibitem{Uri} Wilensky, U. (1999). {NetLogo}. ''http://ccl.northwestern.edu/netlogo/``. Cited on 20th January 2014.
+
+\bibitem{Jon} Klein, J. (2003). Breve: a 3d environment for the simulation of decentralized systems and artificial life. In Proceedings of the eighth international conference on Artificial life. 
+
+\bibitem{Breve} Breve ''http://www.spiderland.org/breve/''. Cited on 20th January 2014.
+
+\bibitem{GEOMASON2011} GEOMASON ``http://cs.gmu.edu/$\sim$eclab/projects/mason/extensions/geomason/''. Cited on 20th January 2014.
+
+\bibitem{GEOMASON} Sullivan, K., Coletti, M., \& Luke, S. (2010). GeoMason: GeoSpatial support for MASON. Department of Computer Science, George Mason University, Technical Report Series.
+
+\bibitem{GEOMV} GMU ``http://cs.gmu.edu/~eclab/projects/mason/extensions/geomason/classdocs/sim/field/geo/GeomVectorField.html''. Cited on 26th December 2013.
+
+\bibitem{GEOMPG} GMU ``http://cs.gmu.edu/~eclab/projects/mason/extensions/geomason/classdocs/sim/util/geo/GeomPlanarGraph.html''. Cited on 26th December 2013.
+
+\bibitem{XY} Zhang, W., Hou, L., Wang, J., Geng, S., \& Wu, W. (2009, May). Comparison research between xy and odd-even routing algorithm of a 2-dimension 3x3 mesh topology network-on-chip. In Intelligent Systems, 2009. GCIS'09. WRI Global Congress. IEEE.
+
+\bibitem{Double3D} GMU ``http://cs.gmu.edu/$\sim$eclab/projects/mason/docs/classdocs/sim/util/Double3D.html''. Cited on 10th December 2013.
+
+\bibitem{Bag} GMU ``http://cs.gmu.edu/$\sim$eclab/projects/mason/docs/classdocs/index.html'', Cited on 10th December 2013.
+
+
+
+
+%\bibliography{your bibliography's file name}
+
+\end{thebibliography}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Almost there....
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% make sure pagecount is correct even if references overflow to a new page
+\pagebreak\addtocounter{page}{-1}
+\eofpages
+\appendices
+
+% create your appendix chapters with command \appchapter{some name} instead
+% of \chapter{some name} for the automagic page counting to work
+
+%\input{file name of appchapter xxx}
+%\input{file name of appchapter yyy}
+%\input{file name of appchapter zzz}
+%\input{and so on}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% main document ends here
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\eofapppages
+\end{document}
+
+

@@ -1,0 +1,115 @@
+\chapter {Introduction}
+
+\textcolor{red}{ It is worthless to build a system without knowing how it reacts in complex situations. We should be a able to simulate the functionality before building any complex system. In this thesis, we introduce agent based modeling to test routing process in Network on Chip (NoC) ~\cite{Kumar} and to simulate the functionality of the system.} Agent Based Modeling and Simulation (ABMS) can be defined as a set of techniques, rules and tools for implementing computation models for complex adaptive systems~\cite{macal2010}. It comprises of many interactive components and also agents which are capable of doing complex adaptive tasks. ABMS allows users to create complex systems using agents. Agent Based Modeling tools provide a good support when designing a system model by using Multi Agent Systems. ABMS has roots in the field of Multi Agent Simulation (MAS), robotics, Artificial Intelligence (AI), game theory, computational sociology and evolutionary programming. 
+ 
+The movie ``World War Z'', stands as a real life example for using Intelligent agents. The zombies in this movies are intelligent agents programmed with AI. The agents (zombies) can interact with each other and also with the environment (in this case 3D buildings and a helicopter) to perform some actions. The agents act with an objective and have a set of rules to achieve. These agents are designed and simulated using Alice.
+ 
+In this thesis, we introduce the concept of using intelligent smart agents in modeling NoC architecture. The concept of incorporating agent properties to NoC elements is first of its kind in NoC architecture. This thesis presents multi agent models of NoC 4x4 mesh network.
+
+We created a NoC agent based model which can run on MASON multi agent simulation toolkit. NoC agent based model presented in this thesis, is a new approach for developing the routing algorithms and dynamically monitoring the routing process in graphical manner. 
+
+Initially, we have created a 2D NoC agent based model and XY-routing algorithm ~\cite{XY} using GeoMason ~\cite{} classes. Having been succeeded in modeling a 2D NoC, we created a more complex architecture of a 3D NoC agent based model. 
+
+We have designed a 3D NoC agent based model and XYZ-routing algorithm using MASON3D class library. This model consist of self directive agent which can navigate along the network autonomously. There are also agents which are developed to follow the routing algorithm mentioned above. We have created a 2D and 3D mesh network environments with our complex logic, as there are no predefined supporting classes in the MASON.
+
+\textcolor{red}{ We used MASON and GeoMason agent based modeling toolkits to create the model. GeoMason is an extension library for MASON that . MASON models can be checkpointed and migrated to other machines. A MASON model is duplicable, that is simulation results on different machines will remain same when the simulation is carried out using the same parameters. Using Java language in modeling makes the model more flexible to run in heterogeneous computer environments.}
+
+This thesis is organized in such a way that first chapters' are the introduction to basic theoretical concepts required to understand the actual thesis work. Next chapters explains about the MASON simulation toolkit, 2D and 3D NoC models and conclusion and future work. Chapter-wise details are discussed below.
+
+Chapter.~\ref{Chapter.two} describes the basic concepts of NoC architectures. It gives a brief overview on types of existing network topologies, switching techniques and routing algorithms.
+
+Chapter.~\ref{Chapter.three} discusses about Multi agent systems, agent properties, agent based modeling basics and simulation environments. It also presents the existing categories of simulation environments and compares several existing multi agent simulators. It discusses about different multi agent simulation environments such as Behavior Based Simulators, Compiled Multiagent Simulators, Interpreted Multiagent Simulators. This chapter, justifies the idea of choosing MASON multi agent simulation toolkit for this model.
+
+Chapter.~\ref{Chapter.four} introduces users to the MASON multi agent simulation toolkit. It has a brief description about the MASON architecture, model layer and visualization layer of the MASON multi agent simulation toolkit.
+
+Chapter.~\ref{Chapter.five} presents the implementation of 2D NoC agent based model using GeoMason classes. This chapter contains the architecture of the 2D NoC model, agents used, routing algorithm implemented, schedule and accomplishments. It also consists of conclusion and evolution of 3D NoC model.
+
+Chapter.~\ref{Chapter.six} is about 3D NoC agent based model. This chapter explains about the Model architecture of 3D NoC agent based model, hierarchical levels, agents used in the model, implemented routing algorithm , class description and schedule.
+
+Chapter.~\ref{Chapter.seven} is the final chapter, which has conclusion and future work of the thesis. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
